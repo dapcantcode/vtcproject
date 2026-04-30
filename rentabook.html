@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        h1{font-style: italic;}
+        button{background-color: white; margin-top: 10px; border-radius: 6px;}
+        button:hover {background-color: rgb(158, 173, 201); transform: scale(1.08);}
+        html,body{ height: 100%; margin: 0;}
+        body{background-image: url(mainpage.jpg.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;}
+    </style>
+</head>
+<body>
+    <h1 style="color: white;"><center>Kindly Select which Book you want to rent</center></h1>
+    <select name="books" id="books">
+        <option value="1">The Alchemist</option>
+        <option value="2">Harry Potter and the sorcerer's Stone</option>
+        <option value="3">To Kill a mockingbird</option>
+        <option value="4">The Hobbit</option>    
+        <option value="5">Rich Dad Poor Dad</option>
+        <option value="6">Atomic Habits</option>
+        <option value="7">The Da Vinci Code</option>
+        <option value="8">Wings of Fire</option>
+        <option value="9">1984</option>
+        <option value="10">The Psychology of Money</option>
+    </select>
+    <button onclick="returnbook()">Select</button>
+    <script>
+        function returnbook(){
+            window.location.href="returnbook.html"
+        }
+    </script>
+</body>
+</html>

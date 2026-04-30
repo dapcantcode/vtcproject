@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{ font-style: italic; color: white;}
+        th,td{background-color: white; padding: 4px; height: 30px; font-size: 14px;}
+        button{size: 10; background-color: white; border-radius: 6px; }
+        button:hover {background-color:rgb(158, 173, 201);; transform: scale(1.08);}
+        table{margin-bottom: 10px; width: 50%; border-collapse: collapse;}
+        body{background-image: url(mainpage.jpg.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;}
+    </style>
+</head>
+<body>
+    <h1><center>LIBRARY COLLECTION.</center></h1>
+    <h2 style="color: white;">Here are the Books available and details about these Books.</h2>
+    <table border="1" style="background-color: black;">
+        <th>Books Title</th><th>Genre</th><th>Author</th><th>Publisher</th><th>Publication Year</th>
+        <tr><td>The Alchemist</td><td>Fiction</td><td>P.Coelho</td><td>HarperONE</td><td>1988</td></tr>
+        <tr><td>Harry Potter and the sorcerer's Stone</td><td>Fantasy</td><td>J.K Rowling</td><td>Bloomsbury</td><td>1997</td></tr>
+        <tr><td>To Kill a mockingbird</td><td>Classic Fiction</td><td>Harper Lee</td><td>J.B.Lippincott and Co.</td><td>1960</td></tr>
+        <tr><td>The Hobbit</td><td>Fantasy</td><td>J.R.R. Tolkien</td><td>George Allen and Unwin</td><td>1937</td></tr>
+        <tr><td>Rich Dad Poor Dad</td><td>Finance</td><td>Robert Kiyosaki</td><td>Plata Publishing</td><td>1997</td></tr>
+        <tr><td>Atomic Habits</td><td>Self-Improvement</td><td>Jamesa Clear</td><td>Avery</td><td>2018</td></tr>
+        <tr><td>The Da Vinci Code</td><td>Mystery</td><td>Dan Brown</td><td>Doubleday</td><td>2003</td></tr>
+        <tr><td>Wings of Fire</td><td>Autobiography</td><td>A.P.J Abdul Kalam</td><td>Universities Press</td><td>1999</td></tr>
+        <tr><td>1984</td><td>Dystopian Fiction</td><td>George Orwell</td><td>Secker</td><td>1949</td></tr>
+        <tr><td>The Psychology of Money</td><td>Finance</td><td>Morgan Housel</td><td>Harriman House</td><td>2020</td></tr>
+    </table>
+    <button onclick="home()">Home page</button>
+    <script>
+        function home(){
+            window.location.href="main.html";
+        }
+    </script>
+</body>
+</html>

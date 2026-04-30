@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr><td><input type="date" placeholder="Date" id="borrowdate">Enter the Date You Rent the Book</td></tr>
+    </table>
+    <button onclick="returndate()">Return Date</button>
+    <p id="result"></p>
+     <button onclick="home()">Home page</button><br>
+</body>
+<script>
+    function returndate(){
+        let input =document.getElementById("borrowdate").value;
+        if(input == ""){
+            document.getElementById("result").innerHTML="Kindly Enter The Borrow Date";
+        }
+        else  {
+            let borrow = new Date(input);
+            let due = new Date(input);
+            due.setMonth(due.getMonth() + 1);
+            let today = new Date();
+            if (today <= due) {
+                document.getElementById("result").innerHTML = " Kindly return the Book before "+ due.toDateString();
+            }
+            else {
+                document.getElementById("result").innerHTML="Late Return! You have to pay a fine of 500 Rupees" +due.toDateString();
+            }
+        }
+    }
+      function home(){
+            window.location.href="main.html";
+        }
+</script>
+</html>
